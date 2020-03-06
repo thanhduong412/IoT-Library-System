@@ -80,5 +80,5 @@ python3 assignment2_project/webapp/flask_main.py
 
 * **Tracy Chan** - [GitHub](https://github.com/tracychan277/)
 * **Jack Murray** - [GitHub](https://github.com/s3722598/)
-* **Thanh Duong** - [GitHub](https://github.com/s3601172/)
+* **Thanh Duong** - [GitHub](https://github.com/thanhduong412/)
 * **Kevin Tunacao** - [GitHub](https://github.com/s3600546/)
