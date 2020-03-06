@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to PIoT-Assignment 2’s documentation! &#8212; PIoT-Assignment 2 2019 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-piot-assignment-2-s-documentation">
+<h1>Welcome to PIoT-Assignment 2’s documentation!<a class="headerlink" href="#welcome-to-piot-assignment-2-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.1: </span>Reception Menu and Master Menu</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.2: </span>Local Database created and implemented</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.2a: </span>Password Encryption implemented</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.2b: </span>Input verification implemented and code documentation</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.3: </span>Master Menu Class added</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.3a: </span>Code clean up and documentation</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.4: </span>Cloud Database connected and implemented</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.4a: </span>Code clean up and documentation</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.4b: </span>Flask API implemented</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.5: </span>Socket Connection and Socket Utils implemented and documentation</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.5a: </span>Flask code documentation and code clean up</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.6: </span>Facial Recognition Implemented</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.6a: </span>Code clean up and documenation</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.7: </span>Voice to text and QR code implemented</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.7a: </span>Bug fixing and code clean up</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.7b: </span>Code documentation</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.8: </span>Code cleanup and documentation</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.9: </span>Graphical Visualisation of data implemented into Flask</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version Final: </span>Release: Code documented and code clean up</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="module-Classes.reception_menu">
+<span id="reception-menu-class"></span><h1>Reception Menu Class<a class="headerlink" href="#module-Classes.reception_menu" title="Permalink to this headline">¶</a></h1>
+<p>Creates Menu class to display user login/registration menu</p>
+<dl class="class">
+<dt id="Classes.reception_menu.Menu">
+<em class="property">class </em><code class="descclassname">Classes.reception_menu.</code><code class="descname">Menu</code><a class="headerlink" href="#Classes.reception_menu.Menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class handles all the menu functions for login/registration of a user.</p>
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.face_menu">
+<code class="descname">face_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.face_menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows facial recognition registration menu</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.login_menu">
+<code class="descname">login_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.login_menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the user input and verifies them. Once verified, the user is logged into the
+application.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.main_menu">
+<code class="descname">main_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.main_menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints the main menu to the console and depending on the user’s choice sends them to
+the relevant menu or exits the program.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.register_menu">
+<code class="descname">register_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.register_menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Requests a number of details from the user in order to create a new entry in the database.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.verify_email">
+<code class="descname">verify_email</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.verify_email" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that does not exist already and is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.verify_fn">
+<code class="descname">verify_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.verify_fn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that first name is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.verify_ln">
+<code class="descname">verify_ln</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.verify_ln" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that last name is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.verify_password">
+<code class="descname">verify_password</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.verify_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that password is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.reception_menu.Menu.verify_username">
+<code class="descname">verify_username</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.reception_menu.Menu.verify_username" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that username does not already exist or is invalid</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.input_verification">
+<span id="input-verification-class"></span><h1>Input Verification Class<a class="headerlink" href="#module-Classes.input_verification" title="Permalink to this headline">¶</a></h1>
+<p>Creates class for handling input verification</p>
+<dl class="class">
+<dt id="Classes.input_verification.InputVerification">
+<em class="property">class </em><code class="descclassname">Classes.input_verification.</code><code class="descname">InputVerification</code><a class="headerlink" href="#Classes.input_verification.InputVerification" title="Permalink to this definition">¶</a></dt>
+<dd><p>This module handles all the verification processes for the user inputs.</p>
+<dl class="staticmethod">
+<dt id="Classes.input_verification.InputVerification.email_valid">
+<em class="property">static </em><code class="descname">email_valid</code><span class="sig-paren">(</span><em>email_input</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.input_verification.InputVerification.email_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the email entered by the user and checks if it’s valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>email_input</strong> (<em>str</em>) – Stores the email value entered by the user.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns True/False based on whether or not the email is valid.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Classes.input_verification.InputVerification.name_valid">
+<em class="property">static </em><code class="descname">name_valid</code><span class="sig-paren">(</span><em>name_input</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.input_verification.InputVerification.name_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes either the first or last name value entered by the user and check if it’s valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name_input</strong> (<em>str</em>) – Stores either the first or last name value that the user entered.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns True/False based on whether or not the name is valid.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Classes.input_verification.InputVerification.pw_valid">
+<em class="property">static </em><code class="descname">pw_valid</code><span class="sig-paren">(</span><em>pw_input</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.input_verification.InputVerification.pw_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the password entered by the user and checks if it’s valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pw_input</strong> (<em>str</em>) – Stores the password value entered by the user.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns True/False based on whether or not the password is valid.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Classes.input_verification.InputVerification.username_valid">
+<em class="property">static </em><code class="descname">username_valid</code><span class="sig-paren">(</span><em>username_input</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.input_verification.InputVerification.username_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the username entered by the user and check if it’s valid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>username_input</strong> (<em>str</em>) – Stores the username value entered by the user.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns True/False based on whether or not the username is valid.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.password_encryption">
+<span id="password-encryption-class"></span><h1>Password Encryption Class<a class="headerlink" href="#module-Classes.password_encryption" title="Permalink to this headline">¶</a></h1>
+<p>Creates password encryption class
+<a class="reference external" href="https://www.cyberciti.biz/python-tutorials/securely-hash-passwords-in-python/">https://www.cyberciti.biz/python-tutorials/securely-hash-passwords-in-python/</a> 23/4</p>
+<dl class="class">
+<dt id="Classes.password_encryption.PasswordEncryption">
+<em class="property">class </em><code class="descclassname">Classes.password_encryption.</code><code class="descname">PasswordEncryption</code><a class="headerlink" href="#Classes.password_encryption.PasswordEncryption" title="Permalink to this definition">¶</a></dt>
+<dd><p>This module handles the encryption for the passwords.</p>
+<dl class="staticmethod">
+<dt id="Classes.password_encryption.PasswordEncryption.encrypt">
+<em class="property">static </em><code class="descname">encrypt</code><span class="sig-paren">(</span><em>password</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.password_encryption.PasswordEncryption.encrypt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes in a password input and encrypts it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>password</strong> (<em>str</em>) – A string storing the password value.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the encrypted password.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.password_encryption.PasswordEncryption.verify">
+<code class="descname">verify</code><span class="sig-paren">(</span><em>usr_details</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.password_encryption.PasswordEncryption.verify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches the database for the password that matches the entered username, then, compares
+the two password values and returns True/False based on whether they match or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>usr_details</strong> (<em>list of str</em>) – List containing the entered username and password.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns True/False based on whether or not the password is correct.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.local_database">
+<span id="local-database-class"></span><h1>Local Database Class<a class="headerlink" href="#module-Classes.local_database" title="Permalink to this headline">¶</a></h1>
+<p>Create database class for handling local database functions</p>
+<dl class="class">
+<dt id="Classes.local_database.LocalDatabase">
+<em class="property">class </em><code class="descclassname">Classes.local_database.</code><code class="descname">LocalDatabase</code><span class="sig-paren">(</span><em>db_name='User.db'</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase" title="Permalink to this definition">¶</a></dt>
+<dd><p>This module handles functions regarding the database.</p>
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.create_table">
+<code class="descname">create_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.create_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates USERS database table if one doesn’t already exist</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.email_exist">
+<code class="descname">email_exist</code><span class="sig-paren">(</span><em>email</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.email_exist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the email already exists in the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>email</strong> (<em>str</em>) – The email to be checked.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns True/False based on whether or not the email exists.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.get_password">
+<code class="descname">get_password</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.get_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get user’s password for verification purposes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>username</strong> (<em>str</em>) – Username of the user to retrieve password for</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the encrypted password for a particular user</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.get_user_email">
+<code class="descname">get_user_email</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.get_user_email" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the user’s email address by their username</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>username</strong> (<em>str</em>) – Username of the user whose email we want to retrieve</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Email address of the user</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.get_user_name">
+<code class="descname">get_user_name</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.get_user_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the user’s first name by their username</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>username</strong> (<em>str</em>) – Username of the user whose name we want to retrieve</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>First name of the user</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.insert_user">
+<code class="descname">insert_user</code><span class="sig-paren">(</span><em>user_details</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.insert_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a new user into the User database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_details</strong> (<em>list of str</em>) – A list containing the details of a new user in the following</p></li>
+<li><p><strong>format</strong> – [First Name, Lastname, Email, Password]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.read_db">
+<code class="descname">read_db</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.read_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to search the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column</strong> (<em>str</em>) – The name of the column to be searched.</p></li>
+<li><p><strong>query</strong> (<em>str</em>) – The SQL query for the desired information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the results of the query.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.local_database.LocalDatabase.username_exist">
+<code class="descname">username_exist</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.local_database.LocalDatabase.username_exist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the username already exists in the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>username</strong> (<em>str</em>) – The username to be checked.</p></li>
+<li><p><strong>search</strong> (<em>bool</em>) – Confirms/denies if the email exists in the database.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns True/False based on whether or not the email exists.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.master_menu">
+<span id="master-menu-class"></span><h1>Master Menu Class<a class="headerlink" href="#module-Classes.master_menu" title="Permalink to this headline">¶</a></h1>
+<p>Creates MasterPi menu class</p>
+<dl class="class">
+<dt id="Classes.master_menu.MasterMenu">
+<em class="property">class </em><code class="descclassname">Classes.master_menu.</code><code class="descname">MasterMenu</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.master_menu.MasterMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class handles the console application menu</p>
+<dl class="method">
+<dt id="Classes.master_menu.MasterMenu.borrow_book">
+<code class="descname">borrow_book</code><span class="sig-paren">(</span><em>user_id</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.master_menu.MasterMenu.borrow_book" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select and borrow a book.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>user_id</strong> (<em>str</em>) – Currently logged in user</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The book will be borrowed by the user.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.master_menu.MasterMenu.menu">
+<code class="descname">menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.master_menu.MasterMenu.menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function handles the user interaction of the console application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>user_id</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.master_menu.MasterMenu.return_book">
+<code class="descname">return_book</code><span class="sig-paren">(</span><em>user_id</em>, <em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.master_menu.MasterMenu.return_book" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select and return a book</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>str</em>) – Currently logged in user</p></li>
+<li><p><strong>action</strong> (<em>str</em>) – Either “text” or “qr” for method of book ID input</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The borrowed book will be returned to the system.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.master_menu.MasterMenu.search_again">
+<code class="descname">search_again</code><span class="sig-paren">(</span><em>user_id</em>, <em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.master_menu.MasterMenu.search_again" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the user wants to search again</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.master_menu.MasterMenu.search_book">
+<code class="descname">search_book</code><span class="sig-paren">(</span><em>user_id</em>, <em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.master_menu.MasterMenu.search_book" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search for a book using text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>usr_id</strong> (<em>int</em>) – ID of the user borrowing books</p></li>
+<li><p><strong>action</strong> (<em>str</em>) – Either “text” or “voice” for search term input method</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All matching books from the search query that have not been borrowed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.master_menu.MasterMenu.validate_book">
+<code class="descname">validate_book</code><span class="sig-paren">(</span><em>book_id</em>, <em>user_id</em>, <em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.master_menu.MasterMenu.validate_book" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether a book ID is valid for borrowing/returning a book</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.cloud_database">
+<span id="cloud-database-class"></span><h1>Cloud Database Class<a class="headerlink" href="#module-Classes.cloud_database" title="Permalink to this headline">¶</a></h1>
+<p>Creates CloudDatabase class</p>
+<dl class="class">
+<dt id="Classes.cloud_database.CloudDatabase">
+<em class="property">class </em><code class="descclassname">Classes.cloud_database.</code><code class="descname">CloudDatabase</code><span class="sig-paren">(</span><em>connection=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects to the Google Cloud SQL database and handles associated functions</p>
+<dl class="method">
+<dt id="Classes.cloud_database.CloudDatabase.borrow_book">
+<code class="descname">borrow_book</code><span class="sig-paren">(</span><em>user_id</em>, <em>book_id</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase.borrow_book" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a record of a book being borrowed into BookBorrowed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.cloud_database.CloudDatabase.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close database connection</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.cloud_database.CloudDatabase.create_user">
+<code class="descname">create_user</code><span class="sig-paren">(</span><em>username</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase.create_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a user record if the username does not already exist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>username</strong> (<em>str</em>) – Username</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – Name</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.cloud_database.CloudDatabase.get_book">
+<code class="descname">get_book</code><span class="sig-paren">(</span><em>usr_in=''</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase.get_book" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a matching book from the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>usr_in</strong> (<em>str</em>) – Search terms for a book (title/author)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All matching books from the search query that have not been borrowed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.cloud_database.CloudDatabase.get_borrowed_books">
+<code class="descname">get_borrowed_books</code><span class="sig-paren">(</span><em>user_id</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase.get_borrowed_books" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks for all books that the user has borrowed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>user_id</strong> (<em>str</em>) – ID of the logged in user</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All books that the user has borrowed at the moment</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.cloud_database.CloudDatabase.get_user_id">
+<code class="descname">get_user_id</code><span class="sig-paren">(</span><em>username</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase.get_user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the currently logged in user’s ID</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.cloud_database.CloudDatabase.return_book">
+<code class="descname">return_book</code><span class="sig-paren">(</span><em>user_id</em>, <em>book_id</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.cloud_database.CloudDatabase.return_book" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update a borrowed book to returned</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.google_calendar">
+<span id="google-calendar-class"></span><h1>Google Calendar Class<a class="headerlink" href="#module-Classes.google_calendar" title="Permalink to this headline">¶</a></h1>
+<p>Creates GoogleCalendar class</p>
+<dl class="class">
+<dt id="Classes.google_calendar.GoogleCalendar">
+<em class="property">class </em><code class="descclassname">Classes.google_calendar.</code><code class="descname">GoogleCalendar</code><a class="headerlink" href="#Classes.google_calendar.GoogleCalendar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles Google calendar related functions such as creating or showing events</p>
+<dl class="method">
+<dt id="Classes.google_calendar.GoogleCalendar.delete_event">
+<code class="descname">delete_event</code><span class="sig-paren">(</span><em>book_name</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.google_calendar.GoogleCalendar.delete_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will delete the event when a book borrowed has been returned.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.google_calendar.GoogleCalendar.insert_event">
+<code class="descname">insert_event</code><span class="sig-paren">(</span><em>book_name</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.google_calendar.GoogleCalendar.insert_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method creates an event in the users calendar for when they
+need to return a book.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.google_calendar.GoogleCalendar.set_up">
+<code class="descname">set_up</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.google_calendar.GoogleCalendar.set_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up Google calendar access authorisation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.google_calendar.GoogleCalendar.show_events">
+<code class="descname">show_events</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.google_calendar.GoogleCalendar.show_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>If a user wants to see their upcoming events, prints the 10 events they have coming up.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.socket_connection">
+<span id="socket-connection-class"></span><h1>Socket Connection Class<a class="headerlink" href="#module-Classes.socket_connection" title="Permalink to this headline">¶</a></h1>
+<p>Creates SocketConnection class</p>
+<dl class="class">
+<dt id="Classes.socket_connection.SocketConnection">
+<em class="property">class </em><code class="descclassname">Classes.socket_connection.</code><code class="descname">SocketConnection</code><a class="headerlink" href="#Classes.socket_connection.SocketConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class primarily handles the socket connection for both Master and Reception Pi</p>
+<dl class="method">
+<dt id="Classes.socket_connection.SocketConnection.master_connecting">
+<code class="descname">master_connecting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.socket_connection.SocketConnection.master_connecting" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function makes the Master Pi listen for the connection of the Reception Pi.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.socket_connection.SocketConnection.reception_connecting">
+<code class="descname">reception_connecting</code><span class="sig-paren">(</span><em>user</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.socket_connection.SocketConnection.reception_connecting" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function makes the Reception Pi search and connect to the Master Pi’s IP</p>
+<dl class="simple">
+<dt>Parameter:</dt><dd><p>user (str): It passes the username to the Master Pi</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.socket_utils">
+<span id="socket-utils-class"></span><h1>Socket Utils Class<a class="headerlink" href="#module-Classes.socket_utils" title="Permalink to this headline">¶</a></h1>
+<p>Creates SocketUtils class</p>
+<dl class="class">
+<dt id="Classes.socket_utils.SocketUtils">
+<em class="property">class </em><code class="descclassname">Classes.socket_utils.</code><code class="descname">SocketUtils</code><a class="headerlink" href="#Classes.socket_utils.SocketUtils" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class handles the utilities of socket connection with json</p>
+<dl class="staticmethod">
+<dt id="Classes.socket_utils.SocketUtils.recv_json">
+<em class="property">static </em><code class="descname">recv_json</code><span class="sig-paren">(</span><em>socket</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.socket_utils.SocketUtils.recv_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receives JSON data via socket</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Classes.socket_utils.SocketUtils.send_json">
+<em class="property">static </em><code class="descname">send_json</code><span class="sig-paren">(</span><em>socket</em>, <em>object_to_send</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.socket_utils.SocketUtils.send_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends JSON data via socket</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.voice_text">
+<span id="voice-to-text-class"></span><h1>Voice to Text Class<a class="headerlink" href="#module-Classes.voice_text" title="Permalink to this headline">¶</a></h1>
+<p>Creates VoiceText class</p>
+<dl class="class">
+<dt id="Classes.voice_text.VoiceText">
+<em class="property">class </em><code class="descclassname">Classes.voice_text.</code><code class="descname">VoiceText</code><a class="headerlink" href="#Classes.voice_text.VoiceText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles all the functionality regarding voice to text methods</p>
+<dl class="method">
+<dt id="Classes.voice_text.VoiceText.get_device">
+<code class="descname">get_device</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.voice_text.VoiceText.get_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds microphone device ID by looking for the name of the microphone</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.voice_text.VoiceText.voice_to_text">
+<code class="descname">voice_to_text</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.voice_text.VoiceText.voice_to_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function converts all audio with Google Speech Recognition into text</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.qr_code">
+<span id="qr-code-class"></span><h1>QR Code Class<a class="headerlink" href="#module-Classes.qr_code" title="Permalink to this headline">¶</a></h1>
+<p>Creates QR class</p>
+<dl class="class">
+<dt id="Classes.qr_code.QR">
+<em class="property">class </em><code class="descclassname">Classes.qr_code.</code><code class="descname">QR</code><a class="headerlink" href="#Classes.qr_code.QR" title="Permalink to this definition">¶</a></dt>
+<dd><p>This module handles QR Code scanning to allow for the returning of books.</p>
+<dl class="staticmethod">
+<dt id="Classes.qr_code.QR.scan_qr">
+<em class="property">static </em><code class="descname">scan_qr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.qr_code.QR.scan_qr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scans a QR Code and returns the data from it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns the contents of the QR Code as a string.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Classes.facial_recognition">
+<span id="facial-recognition-class"></span><h1>Facial Recognition Class<a class="headerlink" href="#module-Classes.facial_recognition" title="Permalink to this headline">¶</a></h1>
+<p>Creates FacialRecognition class</p>
+<dl class="class">
+<dt id="Classes.facial_recognition.FacialRecognition">
+<em class="property">class </em><code class="descclassname">Classes.facial_recognition.</code><code class="descname">FacialRecognition</code><a class="headerlink" href="#Classes.facial_recognition.FacialRecognition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles facial recognition features</p>
+<dl class="staticmethod">
+<dt id="Classes.facial_recognition.FacialRecognition.face_encoding">
+<em class="property">static </em><code class="descname">face_encoding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.facial_recognition.FacialRecognition.face_encoding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encodes facial data into pickle file</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Classes.facial_recognition.FacialRecognition.face_scan">
+<em class="property">static </em><code class="descname">face_scan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Classes.facial_recognition.FacialRecognition.face_scan" title="Permalink to this definition">¶</a></dt>
+<dd><p>Captures and recognises face</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Classes.facial_recognition.FacialRecognition.register_face">
+<code class="descname">register_face</code><span class="sig-paren">(</span><em>user</em><span class="sig-paren">)</span><a class="headerlink" href="#Classes.facial_recognition.FacialRecognition.register_face" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers a new user’s face</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Associates the logged in user with the photos that will be taken.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">PIoT-Assignment 2</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Jack Murray, Kevin Tunacao, Thanh Duong, Tracy Chan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
